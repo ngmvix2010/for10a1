@@ -21,7 +21,7 @@ function deletePin() {
 
 function updatePinDisplay() {
     let displayStr = "";
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < 4; i++) {
         if (i < currentPin.length) {
             displayStr += "*";
         } else {
