@@ -6,7 +6,7 @@ const pinDisplay = document.getElementById("pin-display");
 const audioPlayer = document.getElementById("audio-player");
 
 function addPin(num) {
-    if (currentPin.length < 6) {
+    if (currentPin.length < 4) {
         currentPin += num;
         updatePinDisplay();
     }
