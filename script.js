@@ -1,4 +1,4 @@
-const CORRECT_PIN = "090310";
+const CORRECT_PIN = "0803";
 const SECRET_PASS = "danhchoem";
 
 let currentPin = "";
@@ -23,9 +23,9 @@ function updatePinDisplay() {
     let displayStr = "";
     for (let i = 0; i < 6; i++) {
         if (i < currentPin.length) {
-            displayStr += "●";
+            displayStr += "*";
         } else {
-            displayStr += "O";
+            displayStr += "°";
         }
     }
     pinDisplay.innerText = displayStr;
@@ -36,7 +36,7 @@ function checkPin() {
         document.getElementById("pin-screen").classList.add("hidden");
         document.getElementById("menu-screen").classList.remove("hidden");
     } else {
-        alert("Sai mã PIN rồi! Hint: Sinh nhật của bạn đó nha.");
+        alert("Sai mã PIN rồi! Passwd: 0803");
         currentPin = "";
         updatePinDisplay();
     }
